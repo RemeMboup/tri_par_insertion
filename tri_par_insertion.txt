@@ -1,0 +1,12 @@
+Tri Par insertion(arr) # arr est le tableau `a trier
+N = longueur(arr) # N = longueur du tableau
+# Balayage du tableau du 1`eme jusqu’au dernier element :
+Pour j variant de 0 a N-1:
+    x = arr[j] # C’est l’el´ement a inserer
+    i = j # i est son indice
+    # Insertion dans la partie tri´ee :
+    Tant que i > 0 et arr[i-1] > x:
+    # D´ecalage d’un cran sur la gauche :
+    arr[i] = arr[i-1]
+    i = i-1
+    arr[i] = x
